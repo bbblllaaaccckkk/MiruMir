@@ -4,18 +4,465 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./styles/flexslider.css"> -->
     <link rel="stylesheet" href="css/css.css">
-    <title>landing-test</title>
+    <title>MiruMir</title>
 </head>
 <body>
-    <header id="header"></header>
-    <h1>Получилось!</h1>
-    <i class="fa fa-star" aria-hidden="true"></i>
-    <i class="fa fa-star" aria-hidden="false"></i>
-    <i class="fa fa-star" aria-hidden="false"></i>
+    <header id="header">
+        <!--header contacts -->
+        <div class="header-contacts">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-7 d-flex justify-content-between">
+                        <div>Время работы пн-сб 8.00-18.00</div>
+                        <div class="items-contacts">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <a title="Позвонить" href="tel:+380951234567"> +38 (095) 123-45-67</a>
+                        </div>
+                        <div class="items-contacts">
+                            <a title="Позвонить" href="tel:+380961234567"> +38 (096) 123-45-67</a>
+                        </div>
+                        <div class="items-contacts">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:contact@gmail.com.ua">contact@gmail.com.ua</a>
+                        </div>
+                    </div>
+                    <div class="col-2 text-right item-dark-login">
+                        <a href="#">Войти</a> | <a href="#">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--/header contacts -->
 
-    <nav id="nav"></nav>
+         <!-- header-main-menu -->
+        <div class="header-main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/icon-tm.png" alt="icon-tm">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Главная<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">О нас</a>
+                        <a class="nav-item nav-link" href="#">Каталог</a>
+                        <a class="nav-item nav-link" href="#">Оплата и доставка</a>
+                        <a class="nav-item nav-link" href="#">Гарантия</a>
+                        <a class="nav-item nav-link" href="#">Статьи</a>
+                        <a class="nav-item nav-link" href="#">Новости</a>
+                        <a class="nav-item nav-link" href="#">Контакты</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- /header-main-menu -->
 
-    <footer class="footer"></footer>
+        <!-- header-submenu -->
+        <div class="header-submenu">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="bars"></div>
+                                 КАТАЛОГ ТОВАРОВ
+                                <div class="arrow-duwn">
+                                    <span></span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Поиск..." aria-label="Search">
+                            <button class="btn btn-search d-flex justify-content-center align-items-center" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 submenu-block-icons">
+                        <a href="#">
+                            Избранное
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <span>Сравнение</span>
+                            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            Корзина
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header-submenu -->
+    </header>
+    <section class="section-breadcrumb">
+        <div class="container">  
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная 
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Кондиционеры
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Кондиционеры сплит система</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section-product">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Gallery -->
+                    <div class="gallery">
+                        <div class="gallery-main" style="background-image: url('./images/konder-all-big.png');">
+                            <a href="#">
+                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <ul class="gallery-list d-flex justify-content-between">
+                            <li class="gallery-item active" style="background-image: url('./images/konder-all-big.png');"></li>
+                            <li class="gallery-item" style="background-image: url('./images/konder-one-big.png');"></li>
+                            <li class="gallery-item" style="background-image: url('./images/konder-two-big.png');"></li>
+                        </ul>
+                    </div>
+                    <!-- /Gallery -->
+
+                    <div class="product-links">
+                        <span>
+                            Бренд: <a href="#">Luberg</a>
+                        </span>
+                        <span>
+                            Серия: <a href="#">Luberg LSR-HD</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col product-tabs">
+                    <h3 class="product-head">Кондиционер LIBERG LSR-09 HDI ION, R-410</h3>
+                    <span class="product-code">Код товара: 3208</span>
+                    <div class="price-product d-flex align-items-center">
+                        Цена: <span>5896грн</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#" class="btn-red">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            В корзину
+                        </a>
+                        <a href="#" class="btn-blue">
+                            <i class="fa fa-bolt" aria-hidden="true"></i>
+                            Быстрая покупка
+                        </a>
+                        <a href="#" class="btn-icon">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn-icon">
+                            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <!-- Tabs -->
+                    <nav>
+                        <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-delivery-tab" data-toggle="tab" href="#nav-delivery" role="tab" aria-controls="nav-delivery" aria-selected="true">Доставка</a>
+                            <a class="nav-item nav-link" id="nav-payment-tab" data-toggle="tab" href="#nav-payment" role="tab" aria-controls="nav-payment" aria-selected="false">Оплата</a>
+                            <a class="nav-item nav-link" id="nav-warranty-tab" data-toggle="tab" href="#nav-warranty" role="tab" aria-controls="nav-warranty" aria-selected="false">Гарантия</a>
+                            <a class="nav-item nav-link" id="nav-swap-tab" data-toggle="tab" href="#nav-swap" role="tab" aria-controls="nav-swap" aria-selected="false">Обмен</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-delivery" role="tabpanel" aria-labelledby="nav-delivery-tab">
+                            <p>Самовывоз из офиса или магазина.</p>
+                            <p>Доставка курьером в Харькове и по Харькову</p>
+                            <p>Доставка в Украину осуществляеться транспортной компанией (Новая Почта - отправка ежедневно. Другие перевозки - изходя из маршрута посещений.</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-payment" role="tabpanel" aria-labelledby="nav-payment-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque exercitationem reprehenderit ducimus ut omnis perferendis obcaecati voluptatibus ipsam, harum molestiae neque porro ea ratione voluptatum asperiores mollitia sint laborum.</div>
+                        <div class="tab-pane fade" id="nav-warranty" role="tabpanel" aria-labelledby="nav-warranty-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda unde ea quam optio ad dolorum omnis facilis quo. In quis quo dolores beatae temporibus maiores ea quod libero ad sequi!</div>
+                        <div class="tab-pane fade" id="nav-swap" role="tabpanel" aria-labelledby="nav-swap-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eveniet nobis dolorum distinctio recusandae, hic modi suscipit nesciunt eaque quasi ipsam quo qui laborum mollitia deleniti asperiores nam? Corrupti, expedita?</div>
+                    </div>
+                    <!-- /Tabs -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-product-description">
+        <div class="container">
+            <nav>
+                <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-characteristic-tab" data-toggle="tab" href="#nav-characteristic" role="tab" aria-controls="nav-characteristic" aria-selected="true">Характеристики</a>
+                    <a class="nav-item nav-link" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-description" aria-selected="false">Описание</a>
+                    <a class="nav-item nav-link" id="nav-overview-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="false">Обзор и видео</a>
+                    <a class="nav-item nav-link" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab" aria-controls="nav-reviews" aria-selected="false">Отзывы</a>
+                    <a class="nav-item nav-link" id="nav-instruction-tab" data-toggle="tab" href="#nav-instruction" role="tab" aria-controls="nav-instruction" aria-selected="false">Инструкция <img src="./images/icon-pdf.png" alt="instruction"></a>
+                    <a class="nav-item nav-link" id="nav-question-tab" data-toggle="tab" href="#nav-question" role="tab" aria-controls="nav-question" aria-selected="false">Задать вопрос</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-characteristic" role="tabpanel" aria-labelledby="nav-characteristic-tab">
+                    <ul class="characteristic">
+                        <li class="d-flex justify-content-betwee">
+                            <div>Бренд</div>
+                            <div class="dottet"></div>
+                            <div>Luberg</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Серия</div>
+                            <div class="dottet"></div>
+                            <div>Luberg LSR-HD</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Страна бренда</div>
+                            <div class="dottet"></div>
+                            <div>Китай</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Тип компрессора</div>
+                            <div class="dottet"></div>
+                            <div>Обычный (on/off)</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Мощность охлаждения</div>
+                            <div class="dottet"></div>
+                            <div>2.4-2.8 (9)квт</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Цвет кондиционера</div>
+                            <div class="dottet"></div>
+                            <div>Белый</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Работа на отопление</div>
+                            <div class="dottet"></div>
+                            <div>мин t -5 <sup>o</sup>C</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Рекомендованая площадь помещений м<sup>2</sup></div>
+                            <div class="dottet"></div>
+                            <div>25</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Потребляемая мощность Вт,</div>
+                            <div></div>
+                            <div></div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Охлаждение</div>
+                            <div class="dottet"></div>
+                            <div>0.82</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Обогрев</div>
+                            <div class="dottet"></div>
+                            <div>0.91</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Размеры, мм</div>
+                            <div></div>
+                            <div></div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Внутрений блок</div>
+                            <div class="dottet"></div>
+                            <div>710х200х300</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Наружный блок</div>
+                            <div class="dottet"></div>
+                            <div>910х400х500</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Уровень шума внутренего блока дб</div>
+                            <div class="dottet"></div>
+                            <div>37</div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>Уровень шума наружного блока дб</div>
+                            <div class="dottet"></div>
+                            <div>91</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab">Lorem ipsum dolor sit, amet consectetur adipisicing em mollitia delenm mollitia deleniti asperiores nam? Corruptiiti asperiores nam? Corruptiiente similique consequatur esse dm mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptasperiores nam? Corruptim minima enim eaque at corrupti voluptas asperiores nesciunt autem consm mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptiequuntur iure aspernatur est tempore!</div>
+                <div class="tab-pane fade" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">Lorem ipsum, dolor sit amet consectetur adipisicm mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptiing elit. Assumenda unde ea quam optio ad dolorum omnis facilis quo. In quis quo dolores beatae temporibus maiores ea quod lm mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptiibero ad sequi!</div>
+                <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">Lorem ipsum dolor sit amet consecm mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptitetur adipisicing elit. Omnis eveniet novm mollitia deleniti asperiores nam? Corruptibis dolorum distinctio recusandae, hic modi suscipit nesciunt eaque quasi ipsam quo qui laborum mollitia deleniti asperiores nam? Corrupti, expedita?</div>
+                <div class="tab-pane fade" id="nav-instruction" role="tabpanel" aria-labelledby="nav-instruction-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda unde ea m mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptiquam optio ad dolorum omnis facilis quo. In quis quo dolores beatae temporibus maiores ea quod libero ad sequi!</div>
+                <div class="tab-pane fade" id="nav-question" role="tabpanel" aria-labelledby="nav-question-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eveniet nobis dolorum distinctio recusandae, hic modi suscipit nesciunt eaque quasi ipsam quo qui laborum mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corruptim mollitia deleniti asperiores nam? Corrupti, expedita?</div>
+            </div>
+        </div>
+    </section>
+    <section class="section-buy-this">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4>С ЭТИМ ТОВАРОМ ПОКУПАЮТ</h4>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="product-cards">
+                        <a href="#"  class="product-cards-img d-flex justify-content-center align-items-center">
+                            <img src="./images/product-rele.png" alt="cards-img">
+                        </a>
+                        <a href="#" class="product-card-description text-center">Автомат защиты от всплесков на пряжения Digitop VP-10SE</a>
+                        <div class="wrapper d-flex justify-content-between flex-column align-items-center">
+                            <span class="product-card-price">620 грн</span>
+                            <a href="#" class="btn-red">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-cards">
+                        <a href="#" class="product-cards-img d-flex justify-content-center align-items-center">
+                            <img src="./images/product-clean.png" alt="cards-img">
+                        </a>
+                        <a href="#" class="product-card-description text-center ">Чистящее средство для кондиционера Green/Clean GS5489785</a>
+                        <div class="wrapper d-flex justify-content-between flex-column align-items-center">
+                            <span class="product-card-price">150 грн</span>
+                            <a href="#" class="btn-red">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-cards">
+                        <a href="#" class="product-cards-img d-flex justify-content-center align-items-center">
+                            <img src="./images/product-socket.png" alt="cards-img">
+                        </a>
+                        <a href="#" class="product-card-description text-center">Удлинитель 220 2Е 3 розетки 1.8м white (2u-emsuta1.8)</a>
+                        <div class="wrapper d-flex justify-content-between flex-column align-items-center">
+                            <span class="product-card-price">70 грн</span>
+                            <a href="#" class="btn-red">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-cards">
+                        <a href="#" class="product-cards-img d-flex justify-content-center align-items-center">
+                            <img src="./images/product-socket-two.png" alt="cards-img">
+                        </a>
+                        <a href="#" class="product-card-description text-center">Автомат защиты от всплесков на пряжения Digitop VP-10SE</a>
+                        <div class="wrapper d-flex justify-content-between flex-column align-items-center">
+                            <span class="product-card-price">140 грн</span>
+                            <a href="#" class="btn-red">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                В корзину
+                            </a>
+                        </div>
+                        <div class="product-top">
+                            <div class="red-circle"></div>
+                            <a href="# " class="blue-cicle d-flex justify-content-center align-items-center">ТОП</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col footer-item-logo">
+                    <a href="./index.html">
+                        <img src="./images/icon-tm.png" alt="icon-tm">
+                    </a>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <span>USD</span>26.800
+                        </div> 
+                        <div>
+                            <span>EUR</span> 30.000
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-item-menu d-flex justify-content-center">
+                    <ul>
+                        <li> <a class="active" href="./index.html">Главная</a> </li>
+                        <li> <a href="#">О нас</a> </li>
+                        <li> <a href="#">Каталог</a> </li>
+                        <li> <a href="#">Оплата и доставка</a> </li>
+                    </ul>
+                </div>
+                <div class="col footer-item-menu d-flex justify-content-center">
+                    <ul>
+                        <li> <a href="#">Гарантия</a> </li>
+                        <li> <a href="#">Статьи</a> </li>
+                        <li> <a href="#">Новости</a> </li>
+                        <li> <a href="#">Контакты</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-item-menu d-flex">
+                    <ul>
+                        <li> <a title="Позвонить" href="tel:+380951234567"> +38 (095) 123-45-67</a> </li>
+                        <li> <a title="Позвонить" href="tel:+380961234567"> +38 (096) 123-45-67</a> </li>
+                        <li> <a href="mailto:contact@gmail.com.ua">contact@gmail.com.ua</a> </li>
+                        <li>Время работы пн-сб 8.00-18.00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-item-subscribe d-flex flex-column justify-content-between">
+                    <div>
+                        <span>Подпишитесь на наши новости и акции</span>
+                        <form class="form-inline">
+                            <input class="form-control" type="subscribe" placeholder="" aria-label="subscribe">
+                            <button class="btn btn-subscribe d-flex justify-content-center align-items-center" type="submit">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- all scripts -->
+    <script src="./script/jQuery-3.3.1.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <!-- <script src="./script/jquery.flexslider.js"></script> -->
+    <script src="./script/my-script.js"></script>
 </body>
-</html>
+</html>                          
