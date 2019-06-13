@@ -10,6 +10,8 @@ npm install
 
 gulp run
 
+the finished project is in the folder "build"
+
 
 
 
